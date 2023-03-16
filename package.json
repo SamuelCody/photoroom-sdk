@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git+https://github.com/SamuelCody/photoroom-sdk.git"
   },
   "keywords": [
     "photoroom",
@@ -21,7 +21,7 @@
     "background image"
   ],
   "author": "Ayinde Samuel",
-  "homepage": "",
+  "homepage": "https://github.com/SamuelCody/photoroom-sdk#readme",
   "license": "MIT",
   "devDependencies": {
     "@types/base-64": "^1.0.0",
