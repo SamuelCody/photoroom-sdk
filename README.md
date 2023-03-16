@@ -38,19 +38,14 @@ The **parameters** you can pass to the `removeBgFromImage` function are::
 
 Only the `image_file_b64` property is mandatory.
 
-| Property       | Type       | Description                                                          |
-| -------------- | ---------- | -------------------------------------------------------------------- |
-| image_file_b64 | `"string"` | The image you want to remove the background from, in base 64 format. |
-
-| format | `"png"`, `"jpg"` | Format of the returned image. Can be `"png"` (default) or `"jpg"` (faster, no transparency). |
-
-| channels | `"rgba"`, `"alpha"` | If `"rgba"` (default), a composed image is returned. If `"alpha"`, a black and white image is returned, where white is the foreground and black is the background. |
-
-| bg_color | `"string"` | Can be a `"hex code"` (`"#FF00FF"`) or a `"HTML"` color (red, green, etc...). If provided, sets the background of the returned image to the specified color. |
-
-| size | `"preview"`, `"medium"`, `"hd"`, `"full"` | Will resize the output to the specified size. Can be `"preview"` (0.25 Megapixels), `"medium"` (1.5 MP), `"hd"` (4 MP) or `"full"` (36 MP, can be slower for large images). Useful for mobile apps that need smaller images. Setting preview uses 0.25 credit. |
-
-| crop | `"boolean"` | If `"true"`, the image returned is cropped to the cutout border. Transparent pixels are removed from the border. |
+| Property       | Type                                      | Description                                                                                                                                                                                                                                                    |
+| -------------- | ----------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| image_file_b64 | `"string"`                                | The image you want to remove the background from, in base 64 format.                                                                                                                                                                                           |
+| format         | `"png"`, `"jpg"`                          | Format of the returned image. Can be `"png"` (default) or `"jpg"` (faster, no transparency).                                                                                                                                                                   |
+| channels       | `"rgba"`, `"alpha"`                       | If `"rgba"` (default), a composed image is returned. If `"alpha"`, a black and white image is returned, where white is the foreground and black is the background.                                                                                             |
+| bg_color       | `"string"`                                | Can be a `"hex code"` (`"#FF00FF"`) or a `"HTML"` color (red, green, etc...). If provided, sets the background of the returned image to the specified color.                                                                                                   |
+| size           | `"preview"`, `"medium"`, `"hd"`, `"full"` | Will resize the output to the specified size. Can be `"preview"` (0.25 Megapixels), `"medium"` (1.5 MP), `"hd"` (4 MP) or `"full"` (36 MP, can be slower for large images). Useful for mobile apps that need smaller images. Setting preview uses 0.25 credit. |
+| crop           | `"boolean"`                               | If `"true"`, the image returned is cropped to the cutout border. Transparent pixels are removed from the border.                                                                                                                                               |
 
 And the **output properties** are:
 
