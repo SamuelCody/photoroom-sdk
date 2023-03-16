@@ -1,0 +1,37 @@
+{
+  "name": "photoroom-sdk",
+  "version": "1.0.0",
+  "description": "A simple but effective wrapper for the Photoroom API",
+  "main": "dist/index.js",
+  "module": "dist/index.m.js",
+  "unpkg": "dist/index.umd.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "rm -rf dist && microbundle --tsconfig tsconfig.json --no-sourcemap",
+    "build:win": "del -rf dist && microbundle --tsconfig tsconfig.json --no-sourcemap"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "photoroom",
+    "remove background",
+    "image processing",
+    "background image"
+  ],
+  "author": "Ayinde Samuel",
+  "homepage": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/base-64": "^1.0.0",
+    "microbundle": "^0.15.1"
+  },
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "base-64": "^1.0.0",
+    "isomorphic-unfetch": "^4.0.2"
+  }
+}
